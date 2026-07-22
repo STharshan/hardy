@@ -1,0 +1,6 @@
+{
+  "name": "Hardy's Valeting",
+  "description": "Professional mobile valeting and detailing services across Nottinghamshire. Bringing the showroom experience to your driveway.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

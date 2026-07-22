@@ -1,0 +1,38 @@
+@import "tailwindcss";
+@import "aos/dist/aos.css";
+
+@layer utilities {
+  .font-signature {
+    font-family: 'Alex Brush', cursive;
+  }
+  .font-heading {
+    font-family: 'Oswald', 'Montserrat', sans-serif;
+  }
+  .font-sans {
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #070b14;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3b82f6;
+}
+
+/* Subtle glow utilities */
+.glow-blue {
+  box-shadow: 0 0 25px -5px rgba(59, 130, 246, 0.25);
+}
+
+.glow-card {
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+}
