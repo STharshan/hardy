@@ -1,6 +1,7 @@
 import React from 'react';
 import { Sparkles, Phone, MapPin, MessageSquare, Mail, Facebook, Instagram } from 'lucide-react';
 import { DISPLAY_PHONE, PHONE_NUMBER, WHATSAPP_LINK, EMAIL_ADDRESS, LOCATION_TEXT } from '../data/servicesData';
+import logo from '../../assets/logo.png';
 
 export const Footer: React.FC = () => {
   return (
@@ -14,21 +15,11 @@ export const Footer: React.FC = () => {
             
             {/* LOGO */}
             <a href="#home" className="inline-block group">
-              <div className="flex flex-col items-start">
-                <div className="flex items-center gap-1">
-                  <Sparkles className="w-3 h-3 text-blue-400" />
-                  <svg className="w-8 h-4 text-white fill-current" viewBox="0 0 100 40">
-                    <path d="M10 28 C 15 28, 25 18, 40 12 C 55 6, 75 8, 85 22 C 90 28, 95 28, 98 28 C 98 32, 95 32, 88 32 C 85 28, 78 28, 75 32 C 60 32, 40 32, 28 32 C 25 28, 18 28, 15 32 Z" fill="currentColor" />
-                  </svg>
-                  <Sparkles className="w-3 h-3 text-blue-400" />
-                </div>
-                <span className="font-heading font-black text-2xl tracking-wider text-white uppercase leading-none">
-                  HARDY'S
-                </span>
-                <span className="text-[8px] tracking-[0.35em] text-slate-400 font-bold uppercase border-t border-slate-800 pt-0.5 w-full text-center">
-                  VALETING
-                </span>
-              </div>
+              <img
+                src={logo}
+                alt="Hardy's Valeting logo"
+                className="h-18 w-auto object-contain transition-transform duration-200 group-hover:scale-105"
+              />
             </a>
 
             <p className="text-slate-400 text-xs leading-relaxed max-w-sm">

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Phone, Menu, X, Sparkles, MessageSquare } from 'lucide-react';
 import { DISPLAY_PHONE, PHONE_NUMBER, WHATSAPP_LINK } from '../data/servicesData';
+import logo from '../../assets/logo.png';
 
 interface HeaderProps {
   onOpenQuoteModal: () => void;
@@ -61,25 +62,12 @@ export const Header: React.FC<HeaderProps> = ({ onOpenQuoteModal }) => {
         <div className="flex items-center justify-between">
           
           {/* HARDY'S VALETING LOGO */}
-          <a href="#home" className="group flex items-center gap-3">
-            <div className="relative flex flex-col items-center">
-              {/* Metallic sleek car outline & sparkle */}
-              <div className="flex items-center gap-1">
-                <Sparkles className="w-3 h-3 text-blue-400 animate-pulse" />
-                <svg className="w-10 h-5 text-white fill-current transition-transform group-hover:scale-105" viewBox="0 0 100 40">
-                  {/* Car Roof Silhouette */}
-                  <path d="M10 28 C 15 28, 25 18, 40 12 C 55 6, 75 8, 85 22 C 90 28, 95 28, 98 28 C 98 32, 95 32, 88 32 C 85 28, 78 28, 75 32 C 60 32, 40 32, 28 32 C 25 28, 18 28, 15 32 Z" fill="currentColor" />
-                  <path d="M30 20 C 40 14, 55 12, 65 18 C 55 18, 40 19, 30 20 Z" fill="#3B82F6" />
-                </svg>
-                <Sparkles className="w-3 h-3 text-blue-400 animate-pulse" />
-              </div>
-              <span className="font-heading font-extrabold text-xl sm:text-2xl tracking-wider text-white group-hover:text-blue-400 transition-colors uppercase leading-none mt-0.5">
-                HARDY'S
-              </span>
-              <span className="text-[9px] tracking-[0.35em] text-slate-300 font-bold uppercase border-t border-slate-700/80 pt-0.5 w-full text-center">
-                VALETING
-              </span>
-            </div>
+          <a href="#home" className="group flex items-center">
+            <img
+              src={logo}
+              alt="Hardy's Valeting logo"
+              className="h-10 w-auto sm:h-18 object-contain transition-transform duration-200 group-hover:scale-105"
+            />
           </a>
 
           {/* DESKTOP NAVIGATION */}
